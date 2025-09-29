@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --bg-color: #ecf0f1;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: var(--accent-color);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            animation: fadeInDown 1s ease-out;
+        }
+        .profile-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+        .profile-section:hover {
+            transform: translateY(-5px);
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            text-align: justify;
+            animation: fadeIn 1s ease-out;
+        }
+        .img-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            animation: fadeIn 1.5s ease-out;
+        }
+        img:hover {
+            transform: scale(1.02);
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            animation: fadeInUp 1s ease-out;
+        }
+        .social-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: white;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            background: var(--accent-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+            animation: fadeIn 1s ease-out;
+        }
+        .skill-tag {
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+        .skill-tag:hover {
+            background: var(--accent-color);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Andhika Bima</h1>
+        
+        <div class="profile-section">
+            <p>Halo! Saya adalah seorang mahasiswa Teknologi Informasi yang passionate dalam pengembangan web dan AI agent. Dengan semangat belajar yang tinggi, saya selalu mencari tantangan baru untuk mengembangkan keterampilan dan pengetahuan saya dalam dunia teknologi.</p>
+            
+            <div class="skills">
+                <div class="skill-tag">HTML & CSS</div>
+                <div class="skill-tag">JavaScript</div>
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">Artificial Intelligence</div>
+                <div class="skill-tag">Web Development</div>
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <h2>Hobi Saya</h2>
+            <div class="img-container">
+                <img src="hiking.jpg" alt="Hiking - hobi saya" title="Bermain basket - hobi saya">
+            </div>
+            <p>Mahasiswa Teknologi Informasi yang antusias dengan dunia coding dan eksplorasi alam. Di luar kampus, saya menghabiskan waktu dengan hiking—menjelajahi gunung, menikmati pemandangan dari puncak, dan mencari ketenangan di tengah hutan. Bagi saya, teknologi dan alam bukanlah hal yang bertentangan; justru keduanya mengajarkan keseimbangan: logika dan intuisi, kecepatan dan kesabaran, layar dan langit terbuka.</p>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+            <a href="https://github.com/icescream218" target="_blank">GitHub</a>
+            <a href="https://instagram.com/andbimp" target="_blank">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
